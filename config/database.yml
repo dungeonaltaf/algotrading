@@ -5,13 +5,22 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
+  database: algo_trading
+  username: altaf
+  host: localhost
+  port: 5432
+  password: asd@123
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: algo_trading
+  username: altaf
+  host: localhost
+  port: 5432
+  password: asd@123
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

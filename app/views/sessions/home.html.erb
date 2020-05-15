@@ -1,0 +1,25 @@
+<h1> Welcome to Algo Trading </h1>
+<%= link_to 'LogOut', logout_path, class: 'button alt' %>
+
+
+
+<select id="fucntion" name="function">
+  <option value="TIME_SERIES_INTRADAY">CandleStick</option>
+  <option value="EMA">EMA</option>
+</select>
+
+
+<div class="autocomplete" style="width:300px;">
+<input id="ticker_symbol" type="text" name="symbol" placeholder="Search for ticker symbol">
+
+<select id="interval" name="interval">
+  <option value="1min">1min</option>
+  <option value="5min">5min</option>
+  <option value="15min">15min</option>
+  <option value="30min">30min</option>
+  <option value="60min">60min</option>
+</select>
+</div>
+
+<button type = "button", id = "">Draw Stocks </button>
+<div id="chart_div" style="width: 900px; height: 500px;"></div>
